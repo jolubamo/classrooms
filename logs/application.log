@@ -1,1 +1,513 @@
 2023-08-05 12:02:27.576 INFO  [main] com.example.demo.PruebaApplication - The following profiles are active: local
+2023-08-05 12:02:28.235 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-08-05 12:02:28.282 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42ms. Found 1 JPA repository interfaces.
+2023-08-05 12:02:28.448 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=28fce004-25ac-33ab-b9b3-1fc676743cd9
+2023-08-05 12:02:28.863 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-05 12:02:28.883 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:02:28.883 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-05 12:02:28.883 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-08-05 12:02:28.963 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-05 12:02:28.963 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1374 ms
+2023-08-05 12:02:29.034 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-05 12:02:29.164 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:02:29.176 INFO  [main] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-05 12:02:29.210 INFO  [task-1] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-05 12:02:29.248 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-08-05 12:02:29.337 INFO  [task-1] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-08-05 12:02:29.393 WARN  [main] o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-08-05 12:02:29.411 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-05 12:02:29.610 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-05 12:02:29.624 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-08-05 12:02:30.005 INFO  [task-1] org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.example.demo.model.Student (class must be instantiated by Interceptor)
+2023-08-05 12:02:30.359 INFO  [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-05 12:02:30.366 INFO  [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:02:31.057 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-08-05 12:02:31.158 WARN  [main] o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2023-08-05 12:02:31.161 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:02:31.161 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:02:31.165 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:02:31.165 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:02:31.629 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ea3491d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1de83be1, org.springframework.security.web.header.HeaderWriterFilter@3b45a3e6, org.springframework.security.web.authentication.logout.LogoutFilter@5fa0943d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4582da06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e9a9683, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@eccaf1b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6012bee8, org.springframework.security.web.session.SessionManagementFilter@56c7e2d1, org.springframework.security.web.access.ExceptionTranslationFilter@74214ac3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59f36439]
+2023-08-05 12:02:31.639 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@9423344, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73ccdfc1, org.springframework.security.web.context.SecurityContextPersistenceFilter@738ed8d3, org.springframework.security.web.header.HeaderWriterFilter@32aa27a7, org.springframework.web.filter.CorsFilter@18d8da77, org.springframework.security.web.authentication.logout.LogoutFilter@69e58566, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@538fb761, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@328b2c2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@517fb2c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@502dc93a, org.springframework.security.web.session.SessionManagementFilter@5c7c22ce, org.springframework.security.web.access.ExceptionTranslationFilter@6db59e26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f92e5eb]
+2023-08-05 12:02:31.648 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1df60140, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c1fd5aa, org.springframework.security.web.header.HeaderWriterFilter@42c9c0a1, org.springframework.security.web.csrf.CsrfFilter@54ee423f, org.springframework.security.web.authentication.logout.LogoutFilter@3fe7c87c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59d6a4d1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f588bc6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@62d4dac4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3f13720f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bfaff23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47bae235, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11efa76e, org.springframework.security.web.session.SessionManagementFilter@2643c33f, org.springframework.security.web.access.ExceptionTranslationFilter@baf87a5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e2525fe]
+2023-08-05 12:02:31.743 WARN  [main] o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-08-05 12:02:31.808 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:02:31.825 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-05 12:02:31.992 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2023-08-05 12:02:31.993 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2023-08-05 12:02:32.006 INFO  [main] com.example.demo.PruebaApplication - Started PruebaApplication in 4.894 seconds (JVM running for 5.434)
+2023-08-05 12:02:33.505 INFO  [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 12:02:33.505 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-05 12:02:33.513 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-08-05 12:25:46.093 INFO  [RMI TCP Connection(29)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-08-05 12:25:46.096 INFO  [RMI TCP Connection(29)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:25:46.108 INFO  [RMI TCP Connection(29)-127.0.0.1] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-05 12:25:46.109 INFO  [RMI TCP Connection(29)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-05 12:25:46.112 WARN  [RMI TCP Connection(29)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [mssql-jdbc-shared-timer-core-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:25:46.112 WARN  [RMI TCP Connection(29)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:25:46.113 INFO  [RMI TCP Connection(29)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:25:46.114 INFO  [RMI TCP Connection(29)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:25:46.120 INFO  [RMI TCP Connection(29)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:25:46.121 INFO  [RMI TCP Connection(29)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-05 12:25:46.121 INFO  [RMI TCP Connection(29)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:25:46.122 INFO  [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-05 12:25:46.123 INFO  [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-05 12:25:48.077 INFO  [main] com.example.demo.PruebaApplication - The following profiles are active: local
+2023-08-05 12:25:48.808 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-08-05 12:25:48.856 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42ms. Found 1 JPA repository interfaces.
+2023-08-05 12:25:49.016 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=28fce004-25ac-33ab-b9b3-1fc676743cd9
+2023-08-05 12:25:49.498 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-05 12:25:49.506 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:25:49.507 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-05 12:25:49.507 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-08-05 12:25:49.604 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-05 12:25:49.605 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1515 ms
+2023-08-05 12:25:49.674 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-05 12:25:49.829 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:25:49.844 INFO  [main] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-05 12:25:49.889 INFO  [task-1] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-05 12:25:49.945 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-08-05 12:25:50.075 INFO  [task-1] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-08-05 12:25:50.097 WARN  [main] o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-08-05 12:25:50.156 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-05 12:25:50.364 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-05 12:25:50.382 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-08-05 12:25:50.866 INFO  [task-1] org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.example.demo.model.Student (class must be instantiated by Interceptor)
+2023-08-05 12:25:51.280 INFO  [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-05 12:25:51.287 INFO  [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:25:52.043 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-08-05 12:25:52.150 WARN  [main] o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2023-08-05 12:25:52.153 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:25:52.153 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:25:52.157 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:25:52.157 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:25:52.646 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bbeb9e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ee3cd6, org.springframework.security.web.header.HeaderWriterFilter@48dfce5c, org.springframework.security.web.authentication.logout.LogoutFilter@2643caa6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5c7c22ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50b010d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38e100ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@456beb8b, org.springframework.security.web.session.SessionManagementFilter@7a02d760, org.springframework.security.web.access.ExceptionTranslationFilter@7ecca48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@696d28ee]
+2023-08-05 12:25:52.657 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@47bae235, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f588bc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d0f03f6, org.springframework.security.web.header.HeaderWriterFilter@538fb761, org.springframework.web.filter.CorsFilter@3da8a302, org.springframework.security.web.authentication.logout.LogoutFilter@6dd50380, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@281a54b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5653429e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78c9c38a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21b75073, org.springframework.security.web.session.SessionManagementFilter@163cd4a6, org.springframework.security.web.access.ExceptionTranslationFilter@16bbb59c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bfaff23]
+2023-08-05 12:25:52.665 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f404bc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@44b99467, org.springframework.security.web.header.HeaderWriterFilter@5cdf2c83, org.springframework.security.web.csrf.CsrfFilter@5834fd3f, org.springframework.security.web.authentication.logout.LogoutFilter@7bf3bf2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47a72c32, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e9e7a70, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77d0a492, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e3c6323, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@124b8fe9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37d50217, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f46bc25, org.springframework.security.web.session.SessionManagementFilter@30e734a1, org.springframework.security.web.access.ExceptionTranslationFilter@1899c7ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a458c73]
+2023-08-05 12:25:52.757 WARN  [main] o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-08-05 12:25:52.821 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:25:52.840 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-05 12:25:53.004 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2023-08-05 12:25:53.005 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2023-08-05 12:25:53.016 INFO  [main] com.example.demo.PruebaApplication - Started PruebaApplication in 5.389 seconds (JVM running for 5.953)
+2023-08-05 12:25:53.160 INFO  [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 12:25:53.160 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-05 12:25:53.168 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-08-05 12:26:03.644 INFO  [http-nio-8080-exec-7] c.example.demo.aspect.LoggingAspect - Request: GET /swagger-resources/configuration/ui
+2023-08-05 12:26:03.647 INFO  [http-nio-8080-exec-7] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,springfox.documentation.swagger.web.UiConfiguration@5c40674,[]>
+2023-08-05 12:26:03.665 INFO  [http-nio-8080-exec-9] c.example.demo.aspect.LoggingAspect - Request: GET /swagger-resources/configuration/security
+2023-08-05 12:26:03.665 INFO  [http-nio-8080-exec-9] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,springfox.documentation.swagger.web.SecurityConfiguration@ad6d516,[]>
+2023-08-05 12:26:03.671 INFO  [http-nio-8080-exec-10] c.example.demo.aspect.LoggingAspect - Request: GET /swagger-resources
+2023-08-05 12:26:03.672 INFO  [http-nio-8080-exec-10] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,[springfox.documentation.swagger.web.SwaggerResource@3deec7bb],[]>
+2023-08-05 12:26:03.697 INFO  [http-nio-8080-exec-1] c.example.demo.aspect.LoggingAspect - Request: GET /v2/api-docs
+2023-08-05 12:26:03.739 INFO  [http-nio-8080-exec-1] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,springfox.documentation.spring.web.json.Json@110efd3a,[]>
+2023-08-05 12:26:21.825 INFO  [RMI TCP Connection(4)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-08-05 12:26:21.827 INFO  [RMI TCP Connection(4)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:26:21.839 INFO  [RMI TCP Connection(4)-127.0.0.1] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-05 12:26:21.839 INFO  [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-05 12:26:21.841 WARN  [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:26:21.842 WARN  [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [mssql-jdbc-shared-timer-core-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:26:21.842 WARN  [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:26:21.842 WARN  [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [task-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:26:21.844 INFO  [RMI TCP Connection(4)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:26:21.845 INFO  [RMI TCP Connection(4)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:26:21.852 INFO  [RMI TCP Connection(4)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:26:21.853 INFO  [RMI TCP Connection(4)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-05 12:26:21.853 INFO  [RMI TCP Connection(4)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:26:21.853 INFO  [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-05 12:26:21.854 INFO  [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-05 12:26:23.810 INFO  [main] com.example.demo.PruebaApplication - The following profiles are active: local
+2023-08-05 12:26:24.515 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-08-05 12:26:24.562 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 1 JPA repository interfaces.
+2023-08-05 12:26:24.730 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=28fce004-25ac-33ab-b9b3-1fc676743cd9
+2023-08-05 12:26:25.159 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-05 12:26:25.166 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:26:25.167 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-05 12:26:25.167 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-08-05 12:26:25.256 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-05 12:26:25.257 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1436 ms
+2023-08-05 12:26:25.306 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-05 12:26:25.451 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:26:25.468 INFO  [main] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-05 12:26:25.504 INFO  [task-1] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-05 12:26:25.542 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-08-05 12:26:25.633 INFO  [task-1] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-08-05 12:26:25.707 WARN  [main] o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-08-05 12:26:25.707 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-05 12:26:25.918 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-05 12:26:25.930 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-08-05 12:26:26.324 INFO  [task-1] org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.example.demo.model.Student (class must be instantiated by Interceptor)
+2023-08-05 12:26:28.237 INFO  [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-05 12:26:28.243 INFO  [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:26:29.003 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-08-05 12:26:29.109 WARN  [main] o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2023-08-05 12:26:29.112 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:26:29.112 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:26:29.115 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:26:29.116 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:26:29.573 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34d644b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a8e35d1, org.springframework.security.web.header.HeaderWriterFilter@e196238, org.springframework.security.web.authentication.logout.LogoutFilter@2c34ce24, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e5ff1d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@599cf2cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@515b7335, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@276b68af, org.springframework.security.web.session.SessionManagementFilter@6c2063e0, org.springframework.security.web.access.ExceptionTranslationFilter@19983dd1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77cd1f67]
+2023-08-05 12:26:29.583 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@4b02dc4e, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b67b359, org.springframework.security.web.context.SecurityContextPersistenceFilter@4feea86f, org.springframework.security.web.header.HeaderWriterFilter@7976d382, org.springframework.web.filter.CorsFilter@98c4a8b, org.springframework.security.web.authentication.logout.LogoutFilter@318beab4, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@75937998, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9c848, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@498cf1dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@130bd00e, org.springframework.security.web.session.SessionManagementFilter@59f36439, org.springframework.security.web.access.ExceptionTranslationFilter@51f31fad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e2c8622]
+2023-08-05 12:26:29.595 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18d8da77, org.springframework.security.web.context.SecurityContextPersistenceFilter@67c912d3, org.springframework.security.web.header.HeaderWriterFilter@31a9eaa, org.springframework.security.web.csrf.CsrfFilter@43a9988a, org.springframework.security.web.authentication.logout.LogoutFilter@36d7e8d2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16bbb59c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@16a89351, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@502dc93a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73ccdfc1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60515ab1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37e967df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@486d1868, org.springframework.security.web.session.SessionManagementFilter@19370af1, org.springframework.security.web.access.ExceptionTranslationFilter@2dc54b50, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12d33d7a]
+2023-08-05 12:26:29.695 WARN  [main] o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-08-05 12:26:29.776 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:26:29.798 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-05 12:26:29.967 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2023-08-05 12:26:29.967 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2023-08-05 12:26:29.978 INFO  [main] com.example.demo.PruebaApplication - Started PruebaApplication in 6.644 seconds (JVM running for 7.218)
+2023-08-05 12:26:31.239 INFO  [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 12:26:31.240 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-05 12:26:31.247 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-08-05 12:30:29.511 INFO  [http-nio-8080-exec-8] c.example.demo.aspect.LoggingAspect - Request: GET /swagger-resources/configuration/ui
+2023-08-05 12:30:29.512 INFO  [http-nio-8080-exec-8] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,springfox.documentation.swagger.web.UiConfiguration@6addc6d2,[]>
+2023-08-05 12:30:29.539 INFO  [http-nio-8080-exec-10] c.example.demo.aspect.LoggingAspect - Request: GET /swagger-resources/configuration/security
+2023-08-05 12:30:29.539 INFO  [http-nio-8080-exec-10] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,springfox.documentation.swagger.web.SecurityConfiguration@696317ef,[]>
+2023-08-05 12:30:29.549 INFO  [http-nio-8080-exec-2] c.example.demo.aspect.LoggingAspect - Request: GET /swagger-resources
+2023-08-05 12:30:29.550 INFO  [http-nio-8080-exec-2] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,[springfox.documentation.swagger.web.SwaggerResource@218a5834],[]>
+2023-08-05 12:30:29.576 INFO  [http-nio-8080-exec-1] c.example.demo.aspect.LoggingAspect - Request: GET /v2/api-docs
+2023-08-05 12:30:29.628 INFO  [http-nio-8080-exec-1] c.example.demo.aspect.LoggingAspect - Response: <200 OK OK,springfox.documentation.spring.web.json.Json@30690efd,[]>
+2023-08-05 12:35:29.869 WARN  [http-nio-8080-exec-1] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 208, SQLState: S0002
+2023-08-05 12:35:29.869 ERROR [http-nio-8080-exec-1] o.h.e.jdbc.spi.SqlExceptionHelper - El nombre de objeto 'usuarios' no es válido.
+2023-08-05 12:35:29.876 WARN  [http-nio-8080-exec-1] o.s.s.o.p.endpoint.TokenEndpoint - Handling error: InternalAuthenticationServiceException, could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2023-08-05 12:40:26.305 WARN  [http-nio-8080-exec-7] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 208, SQLState: S0002
+2023-08-05 12:40:26.305 ERROR [http-nio-8080-exec-7] o.h.e.jdbc.spi.SqlExceptionHelper - El nombre de objeto 'usuarios' no es válido.
+2023-08-05 12:40:26.306 WARN  [http-nio-8080-exec-7] o.s.s.o.p.endpoint.TokenEndpoint - Handling error: InternalAuthenticationServiceException, could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2023-08-05 12:43:06.747 INFO  [RMI TCP Connection(22)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-08-05 12:43:06.750 INFO  [RMI TCP Connection(22)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:43:06.760 INFO  [RMI TCP Connection(22)-127.0.0.1] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-05 12:43:06.773 INFO  [RMI TCP Connection(22)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-05 12:43:06.775 WARN  [RMI TCP Connection(22)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [mssql-jdbc-shared-timer-core-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:43:06.776 WARN  [RMI TCP Connection(22)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:43:06.777 INFO  [RMI TCP Connection(22)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:43:06.778 INFO  [RMI TCP Connection(22)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:43:06.784 INFO  [RMI TCP Connection(22)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:43:06.785 INFO  [RMI TCP Connection(22)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-05 12:43:06.785 INFO  [RMI TCP Connection(22)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:43:06.786 INFO  [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-05 12:43:06.787 INFO  [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-05 12:43:21.298 INFO  [main] com.example.demo.PruebaApplication - The following profiles are active: local
+2023-08-05 12:43:22.150 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-08-05 12:43:22.207 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+2023-08-05 12:43:22.370 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=28fce004-25ac-33ab-b9b3-1fc676743cd9
+2023-08-05 12:43:22.831 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-05 12:43:22.840 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:43:22.841 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-05 12:43:22.841 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-08-05 12:43:22.935 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-05 12:43:22.935 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1625 ms
+2023-08-05 12:43:22.994 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-05 12:43:23.120 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:43:23.133 INFO  [main] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-05 12:43:23.174 INFO  [task-1] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-05 12:43:23.222 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-08-05 12:43:23.344 INFO  [task-1] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-08-05 12:43:23.363 WARN  [main] o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-08-05 12:43:23.420 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-05 12:43:23.641 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-05 12:43:23.668 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-08-05 12:43:24.085 INFO  [task-1] org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.example.demo.model.Student (class must be instantiated by Interceptor)
+2023-08-05 12:43:24.442 INFO  [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-05 12:43:24.447 INFO  [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:43:25.109 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-08-05 12:43:25.207 WARN  [main] o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2023-08-05 12:43:25.209 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:43:25.209 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:43:25.212 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:43:25.213 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:43:25.663 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e08ed28, org.springframework.security.web.context.SecurityContextPersistenceFilter@73a5cc47, org.springframework.security.web.header.HeaderWriterFilter@139da216, org.springframework.security.web.authentication.logout.LogoutFilter@3d00c2ae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60b8c05c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31d09031, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@100d5018, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24b05292, org.springframework.security.web.session.SessionManagementFilter@7040d71, org.springframework.security.web.access.ExceptionTranslationFilter@2e549515, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5687ba39]
+2023-08-05 12:43:25.673 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@264c9994, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46c7e6c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dc54b50, org.springframework.security.web.header.HeaderWriterFilter@456beb8b, org.springframework.web.filter.CorsFilter@701a79b, org.springframework.security.web.authentication.logout.LogoutFilter@60515ab1, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@486d1868, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31a9eaa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19370af1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2605433, org.springframework.security.web.session.SessionManagementFilter@191cf38f, org.springframework.security.web.access.ExceptionTranslationFilter@5bbeb9e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@729eef5f]
+2023-08-05 12:43:25.682 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a2b3cfd, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e2525fe, org.springframework.security.web.header.HeaderWriterFilter@5bbb351e, org.springframework.security.web.csrf.CsrfFilter@21b75073, org.springframework.security.web.authentication.logout.LogoutFilter@58df431e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62d4dac4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18f1260, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33602729, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2aacf54b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59d6a4d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b476930, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3638120f, org.springframework.security.web.session.SessionManagementFilter@5f80b25a, org.springframework.security.web.access.ExceptionTranslationFilter@5c04685, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1df60140]
+2023-08-05 12:43:25.769 WARN  [main] o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-08-05 12:43:25.827 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:43:25.847 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-05 12:43:26.008 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2023-08-05 12:43:26.009 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2023-08-05 12:43:26.020 INFO  [main] com.example.demo.PruebaApplication - Started PruebaApplication in 5.178 seconds (JVM running for 6.393)
+2023-08-05 12:43:28.094 INFO  [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 12:43:28.095 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-05 12:43:28.103 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-08-05 12:43:33.061 WARN  [http-nio-8080-exec-2] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 208, SQLState: S0002
+2023-08-05 12:43:33.061 ERROR [http-nio-8080-exec-2] o.h.e.jdbc.spi.SqlExceptionHelper - El nombre de objeto 'usuarios' no es válido.
+2023-08-05 12:43:33.067 WARN  [http-nio-8080-exec-2] o.s.s.o.p.endpoint.TokenEndpoint - Handling error: InternalAuthenticationServiceException, could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2023-08-05 12:44:41.319 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-08-05 12:44:41.321 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:44:41.334 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-05 12:44:41.335 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-05 12:44:41.337 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [mssql-jdbc-shared-timer-core-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:44:41.337 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:44:41.338 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:44:41.338 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:44:41.343 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:44:41.344 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-05 12:44:41.344 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:44:41.344 INFO  [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-05 12:44:41.345 INFO  [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-05 12:44:43.151 INFO  [main] com.example.demo.PruebaApplication - The following profiles are active: local
+2023-08-05 12:44:43.816 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-08-05 12:44:43.863 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2023-08-05 12:44:44.021 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=28fce004-25ac-33ab-b9b3-1fc676743cd9
+2023-08-05 12:44:44.429 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-05 12:44:44.436 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:44:44.437 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-05 12:44:44.437 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-08-05 12:44:44.533 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-05 12:44:44.533 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1373 ms
+2023-08-05 12:44:44.594 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-05 12:44:44.726 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:44:44.738 INFO  [main] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-05 12:44:44.771 INFO  [task-1] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-05 12:44:44.807 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-08-05 12:44:44.894 INFO  [task-1] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-08-05 12:44:44.942 WARN  [main] o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-08-05 12:44:44.962 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-05 12:44:45.154 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-05 12:44:45.166 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-08-05 12:44:45.540 INFO  [task-1] org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.example.demo.model.Student (class must be instantiated by Interceptor)
+2023-08-05 12:44:45.889 INFO  [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-05 12:44:45.895 INFO  [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:44:46.546 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-08-05 12:44:46.644 WARN  [main] o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2023-08-05 12:44:46.646 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:44:46.646 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:44:46.650 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:44:46.650 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:44:47.103 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c10eb3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@71d0ad00, org.springframework.security.web.header.HeaderWriterFilter@31b4c003, org.springframework.security.web.authentication.logout.LogoutFilter@510d4d4b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5687ba39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f6f2d91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ecca48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49f32bcb, org.springframework.security.web.session.SessionManagementFilter@66075347, org.springframework.security.web.access.ExceptionTranslationFilter@4d305059, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@475b796d]
+2023-08-05 12:44:47.113 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@538fb761, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@163cd4a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@13cec4ff, org.springframework.security.web.header.HeaderWriterFilter@4eb69e8d, org.springframework.web.filter.CorsFilter@1d0f03f6, org.springframework.security.web.authentication.logout.LogoutFilter@515a2afd, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2f9d47a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e08ed28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24b05292, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5653429e, org.springframework.security.web.session.SessionManagementFilter@78fd1179, org.springframework.security.web.access.ExceptionTranslationFilter@130bd00e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16bbb59c]
+2023-08-05 12:44:47.123 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7672dd7a, org.springframework.security.web.context.SecurityContextPersistenceFilter@a94c8e3, org.springframework.security.web.header.HeaderWriterFilter@335cbcbd, org.springframework.security.web.csrf.CsrfFilter@729eef5f, org.springframework.security.web.authentication.logout.LogoutFilter@3c1fd5aa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21b75073, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5a457aa1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1aee0f49, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@18f1260, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54ee423f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@281a54b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a80ebcd, org.springframework.security.web.session.SessionManagementFilter@64c79b69, org.springframework.security.web.access.ExceptionTranslationFilter@331da721, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3da8a302]
+2023-08-05 12:44:47.226 WARN  [main] o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-08-05 12:44:47.252 INFO  [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 12:44:47.252 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-05 12:44:47.260 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-08-05 12:44:47.292 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:44:47.312 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-05 12:44:47.469 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2023-08-05 12:44:47.470 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2023-08-05 12:44:47.474 INFO  [main] com.example.demo.PruebaApplication - Started PruebaApplication in 4.781 seconds (JVM running for 5.338)
+2023-08-05 12:45:00.410 WARN  [http-nio-8080-exec-2] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 207, SQLState: S0001
+2023-08-05 12:45:00.410 ERROR [http-nio-8080-exec-2] o.h.e.jdbc.spi.SqlExceptionHelper - El nombre de columna 'usu_id' no es válido.
+2023-08-05 12:45:00.417 WARN  [http-nio-8080-exec-2] o.s.s.o.p.endpoint.TokenEndpoint - Handling error: InternalAuthenticationServiceException, could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2023-08-05 12:45:26.436 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-08-05 12:45:26.439 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:45:26.450 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-05 12:45:26.451 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-05 12:45:26.452 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [task-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:45:26.453 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [mssql-jdbc-shared-timer-core-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:45:26.453 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:45:26.453 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [task-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:45:26.454 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:45:26.455 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:45:26.460 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:45:26.461 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-05 12:45:26.461 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:45:26.461 INFO  [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-05 12:45:26.462 INFO  [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-05 12:45:28.256 INFO  [main] com.example.demo.PruebaApplication - The following profiles are active: local
+2023-08-05 12:45:28.905 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-08-05 12:45:28.953 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
+2023-08-05 12:45:29.112 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=28fce004-25ac-33ab-b9b3-1fc676743cd9
+2023-08-05 12:45:29.522 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-05 12:45:29.527 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:45:29.528 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-05 12:45:29.528 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-08-05 12:45:29.615 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-05 12:45:29.615 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1348 ms
+2023-08-05 12:45:29.674 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-05 12:45:29.798 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:45:29.811 INFO  [main] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-05 12:45:29.846 INFO  [task-1] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-05 12:45:29.880 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-08-05 12:45:29.967 INFO  [task-1] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-08-05 12:45:30.016 WARN  [main] o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-08-05 12:45:30.040 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-05 12:45:30.233 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-05 12:45:30.247 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-08-05 12:45:30.614 INFO  [task-1] org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.example.demo.model.Student (class must be instantiated by Interceptor)
+2023-08-05 12:45:30.780 INFO  [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-05 12:45:30.784 INFO  [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:45:31.432 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-08-05 12:45:31.529 WARN  [main] o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2023-08-05 12:45:31.532 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:45:31.532 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:45:31.535 WARN  [main] c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-05 12:45:31.535 INFO  [main] c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-08-05 12:45:31.978 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7af5ce66, org.springframework.security.web.context.SecurityContextPersistenceFilter@3119fcad, org.springframework.security.web.header.HeaderWriterFilter@5b5f06bb, org.springframework.security.web.authentication.logout.LogoutFilter@475b796d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a9e2c3b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2643caa6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@374712f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f2bf80d, org.springframework.security.web.session.SessionManagementFilter@50ad5625, org.springframework.security.web.access.ExceptionTranslationFilter@10b36d8a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67c912d3]
+2023-08-05 12:45:31.991 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@3638120f, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bf3bf2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bfaff23, org.springframework.security.web.header.HeaderWriterFilter@2643c33f, org.springframework.web.filter.CorsFilter@581cb879, org.springframework.security.web.authentication.logout.LogoutFilter@21b75073, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@30e734a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47bae235, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f588bc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a77953c, org.springframework.security.web.session.SessionManagementFilter@3c1fd5aa, org.springframework.security.web.access.ExceptionTranslationFilter@42c9c0a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33602729]
+2023-08-05 12:45:32.002 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63437af4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b2317b7, org.springframework.security.web.header.HeaderWriterFilter@15ff247b, org.springframework.security.web.csrf.CsrfFilter@6dcb4f30, org.springframework.security.web.authentication.logout.LogoutFilter@2a4a95c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d5ec2ed, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77a14911, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33f059ad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5bb24266, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56c26b21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a72517e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c7bc8ac, org.springframework.security.web.session.SessionManagementFilter@71979130, org.springframework.security.web.access.ExceptionTranslationFilter@6ff05f85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d1a763c]
+2023-08-05 12:45:32.090 WARN  [main] o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-08-05 12:45:32.148 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:45:32.166 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-05 12:45:32.275 INFO  [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-05 12:45:32.275 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-05 12:45:32.283 INFO  [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-08-05 12:45:32.330 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2023-08-05 12:45:32.331 INFO  [main] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2023-08-05 12:45:32.336 INFO  [main] com.example.demo.PruebaApplication - Started PruebaApplication in 4.541 seconds (JVM running for 5.086)
+2023-08-05 12:46:02.550 WARN  [http-nio-8080-exec-2] o.s.s.o.p.endpoint.TokenEndpoint - Handling error: InvalidGrantException, User is disabled
+2023-08-05 12:47:28.820 WARN  [http-nio-8080-exec-4] o.s.s.o.p.endpoint.TokenEndpoint - Handling error: InvalidGrantException, User is disabled
+2023-08-05 12:47:32.768 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-08-05 12:47:32.771 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:47:32.782 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-05 12:47:32.783 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-05 12:47:32.785 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [mssql-jdbc-shared-timer-core-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:47:32.785 WARN  [RMI TCP Connection(5)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2023-08-05 12:47:32.786 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:47:32.787 INFO  [RMI TCP Connection(5)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-05 12:47:32.793 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-05 12:47:32.794 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-05 12:47:32.794 INFO  [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-05 12:47:32.794 INFO  [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-05 12:47:32.795 INFO  [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

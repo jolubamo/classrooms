@@ -22,19 +22,21 @@ public class LoginServiceImpl implements UserDetailsService{
     private IUserRepository usuarioRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
 
-        com.example.demo.model.User usuario = usuarioRepository.searchUserPassword(username);
+        com.example.demo.model.User usuario = usuarioRepository.searchUserEmail(email);
+        
+        System.out.println(usuario);
 
-        boolean estado = false;
+        boolean estado = true;
 
         List<GrantedAuthority> lstRole = buscarRolePorUsuario(usuario.getEmail());
 
         //List<GrantedAuthority> lstRole = buscarRolePorUsuario(username);
 
 
-        return new User(username, usuario.getPassword(), estado, true, true, true, lstRole);
+        return new User(email, usuario.getPassword(), estado, true, true, true, lstRole);
     }
 
     private List<GrantedAuthority> buscarRolePorUsuario(String usuario) {
