@@ -12,10 +12,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name="dimension")
-public class Dimension extends Base{
-	
-	@Column(name="dim_name")
+@Table(name="role")
+public class Role extends Base{
+
+	@Column(name="rol_name")
 	private String name;
-	
 }

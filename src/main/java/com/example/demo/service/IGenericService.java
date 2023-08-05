@@ -2,15 +2,17 @@ package com.example.demo.service;
 
 import java.util.List;
 
-public interface IGenericService<T, ID> {
+import com.example.demo.model.Base;
+
+public interface IGenericService<T extends Base, ID> {
 
 	List<T> list() throws Exception;
 
-	ID save(T t) throws Exception;
+	T save(T t) throws Exception;
 
-	void update(T t) throws Exception;
+	T update(T t, ID id) throws Exception;
 
-	void delete(ID id) throws Exception;
+	boolean delete(ID id) throws Exception;
 	
 	T listById(ID id) throws Exception;
 	

@@ -5,27 +5,26 @@ import javax.persistence.ForeignKey;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapsId;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity
-@Builder
-@Table(name="student")
-public class Student extends Base{
-	
+@Table(name="user_role")
+public class UserRole extends Base{
+
 	@MapsId
-	@OneToOne
-	@JoinColumn(name="usr_id")
+	@ManyToOne
+	@JoinColumn(name="usr_id",nullable = false, foreignKey = @ForeignKey(name = "fk_usr_rol_user"))
 	private User user;
 	
+	@MapsId
 	@ManyToOne
-	@JoinColumn(name="cla_id",nullable = false, foreignKey = @ForeignKey(name = "fk_student_classroom"))
-	private Classroom classroom;
-	
+	@JoinColumn(name="rol_id",nullable = false, foreignKey = @ForeignKey(name = "fk_usr_rol_role"))
+	private Role role;
 }

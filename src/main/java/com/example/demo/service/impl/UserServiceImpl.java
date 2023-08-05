@@ -1,46 +1,33 @@
 package com.example.demo.service.impl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.model.User;
+import com.example.demo.repository.IGeneralRepository;
+import com.example.demo.repository.IUserRepository;
 import com.example.demo.service.IUserService;
 
 @Service
-public class UserServiceImpl implements IUserService{
+public class UserServiceImpl extends GeneralServiceImpl<User, Integer> implements IUserService{
 
+	@Autowired
+	private IUserRepository userRepo;
 	
+	@Autowired
+	private BCryptPasswordEncoder encoder;
+	
+	public UserServiceImpl(IGeneralRepository<User, Integer> generalRepository) {
+		super(generalRepository);
+	}
 	
 	@Override
-	public List<User> list() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Integer save(User t) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void update(User t) throws Exception {
-		// TODO Auto-generated method stub
+	public User save(User t) throws Exception {
 		
-	}
-
-	@Override
-	public void delete(Integer id) throws Exception {
-		// TODO Auto-generated method stub
+		t.setPassword(encoder.encode(t.getPassword()));
 		
-	}
-
-	@Override
-	public User listById(Integer id) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return super.save(t);
 	}
 
 }
