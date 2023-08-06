@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +22,7 @@ public abstract class GeneralControllerImpl<T extends Base, S extends GeneralSer
 	
 
     @PostMapping("")
-    public ResponseEntity<?> save(@RequestBody T t){
+    public ResponseEntity<?> save(@Valid @RequestBody T t){
         try {
             return ResponseEntity.status(HttpStatus.OK).body(servicio.save(t));
         } catch (Exception e) {
@@ -47,7 +49,7 @@ public abstract class GeneralControllerImpl<T extends Base, S extends GeneralSer
     }
 	
 	@PutMapping("/{id}")
-    public ResponseEntity<?> update(@PathVariable Integer id,@RequestBody T t) {
+    public ResponseEntity<?> update(@PathVariable Integer id,@Valid @RequestBody T t) {
         try {
             return ResponseEntity.status(HttpStatus.OK).body(servicio.update(t, id));
         } catch (Exception e) {

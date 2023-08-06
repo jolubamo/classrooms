@@ -21,11 +21,11 @@ public class Criteria extends Base{
 	@Column(name="cri_description")
 	private String description;
 	
-	@ManyToOne
+	@ManyToOne(optional = false)
 	@JoinColumn(name="lvl_id",nullable = false, foreignKey = @ForeignKey(name = "fk_criteria_level"))
 	private Level level;
 	
-	@ManyToOne
+	@ManyToOne(optional = false)
 	@JoinColumn(name="dim_id",nullable = false, foreignKey = @ForeignKey(name = "fk_criteria_dimension"))
 	private Dimension dimension;
 }

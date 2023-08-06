@@ -23,14 +23,13 @@ public class Classroom extends Base{
 	@Column(name= "cla_name")
 	private String nombre;
 	
-	@ManyToOne
+	@ManyToOne(optional = false)
 	@JoinColumn(name="lvl_id",nullable = false, foreignKey = @ForeignKey(name = "fk_classroom_level"))
 	private Level level;
 	
 	@Column(name="cla_max_student")
 	private int maxStudent;
 	
-	@MapsId
 	@OneToOne
 	@JoinColumn(name= "tea_id")
 	private Teacher teacher;
